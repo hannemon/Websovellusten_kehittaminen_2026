@@ -1,0 +1,47 @@
+body {
+  background-color: lightgray;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #9d6d0b;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #8c6c0cc5;
+}
+
+form {
+  flex-direction: column;
+  gap: 1px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 6px;
+  border: 1px solid #836609;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #958518;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #958518;
+}
