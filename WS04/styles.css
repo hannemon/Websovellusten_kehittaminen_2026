@@ -49,8 +49,9 @@ h3 {
 
 .box {
   background-color: rgb(221, 230, 173);
-  padding: 50px;
+  padding: 40px;
   text-align: center;
+  flex: 0 1 10%; 
 }
 
 .responsive-box {
