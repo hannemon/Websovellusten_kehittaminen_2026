@@ -1,32 +1,56 @@
-body  {
+body {
   background-color: lightgray;
-  margin: 1;
-  padding: 0px;
 }
 
-h1 {
-  color: #8c6c0cc5;
-  text-align: center;
+h1{
+        color: #958518;
+        text-align: center;
+        background-color: rgb(216, 223, 215);
 }
 
-head {
-    background-color: #c8c2afc5;
-    color: white;
-    padding: 10px;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-header {
-    background-color: #c8c2afc5;
-    color: white;
-    padding: 10px;
+th,
+td {
+  border: 1px solid #9d6d0b;
+  padding: 8px;
+  text-align: left;
 }
 
-h2 {
-    color: #8c6c0cc5;
+th {
+  background-color: #8c6c0cc5;
 }
 
-h3 {
-    color: #8c6c0cc5;
+form {
+  flex-direction: column;
+  gap: 1px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 6px;
+  border: 1px solid #836609;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #958518;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #958518;
 }
 
 .grid-container {
@@ -70,3 +94,11 @@ h3 {
     background-color: rgb(97, 176, 172);
   }
 }
+
+.pseudo-list li:nth-child(odd) {
+        background-color: rgb(225, 146, 117);
+      }
+
+      .pseudo-list li:nth-child(even) {
+        background-color: rgb(223, 199, 207);
+      }
