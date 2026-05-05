@@ -86,6 +86,7 @@ input[type="submit"]:hover {
   padding: 20px;
   text-align: center;
   flex: 1 1 100%; 
+  border-style: ridge;
 }
 
 .responsive-box {
@@ -126,7 +127,9 @@ input[type="submit"]:hover {
     
     .column {
       flex: 1;
-      padding: 10px;
+      padding: 20px;
+      border-style: ridge;
+      background-color: sandybrown;
     }
     
     @media (max-width: 600px) {
@@ -138,4 +141,27 @@ input[type="submit"]:hover {
     .responsive-image {
       max-width: 30%;
       height: auto;
+    }
+
+    .responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      gap: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+       
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+        background-color: #958518;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
     }
