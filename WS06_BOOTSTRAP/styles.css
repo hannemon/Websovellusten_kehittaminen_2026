@@ -1,0 +1,180 @@
+body {
+  background-color: whitesmoke;
+  font-family: 'Times New Roman', serif, sans-serif;
+  padding: 10px;
+}
+
+h1{
+        color: #958518;
+        text-align: center;
+        background-color: rgb(216, 223, 215);
+        padding: 20px;
+}
+
+/*WS02 basic styling*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #9d6d0b;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #8c6c0cc5;
+}
+
+form {
+  flex-direction: column;
+  gap: 1px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 6px;
+  border: 1px solid #836609;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #958518;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #958518;
+}
+
+/*WS04 grid and flexbox*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: rgb(245, 143, 107);
+  padding: 20px;
+  text-align: center;
+  /* Adds these to handle long words */
+  overflow-wrap: break-word;  /* Breaks the word if it's too long */
+  word-wrap: break-word;      /* Legacy support */
+  hyphens: auto;
+}
+
+.flex-container {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  flex-wrap: wrap; /* This allows items to move to the next line */
+}
+
+.box {
+  background-color: rgb(221, 230, 173);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 100%; 
+  border-style: ridge;
+}
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: rgb(97, 176, 172);
+  }
+}
+
+/*WS03 pseudo-classes*/
+      .pseudo-list li {
+        padding: 10px;
+        color: white;
+      }
+.pseudo-list li:nth-child(odd) {
+        background-color: rgb(225, 146, 117);
+      }
+
+      .pseudo-list li:nth-child(even) {
+        background-color: rgb(223, 199, 207);
+      }
+
+/*WS05 responsive design*/
+      .responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 20px;
+      border-style: ridge;
+      background-color: sandybrown;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }
+
+    .responsive-image {
+      max-width: 30%;
+      height: auto;
+    }
+
+    .responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      gap: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+       
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+        background-color: #958518;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+    /*WS06 Bootstrap overrides*/
+    .row {
+      background-color: rgb(181, 52, 121);
+      padding: 30px;
+      text-align: center;
+      border-style: double;
+      }
+
+
+    
+     
