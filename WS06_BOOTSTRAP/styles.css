@@ -1,14 +1,14 @@
 body {
   background-color: whitesmoke;
-  font-family: 'Times New Roman', serif, sans-serif;
+  font-family: "Times New Roman", serif, sans-serif;
   padding: 10px;
 }
 
-h1{
-        color: #958518;
-        text-align: center;
-        background-color: rgb(216, 223, 215);
-        padding: 20px;
+h1 {
+  color: #958518;
+  text-align: center;
+  background-color: rgb(216, 223, 215);
+  padding: 20px;
 }
 
 /*WS02 basic styling*/
@@ -69,13 +69,13 @@ input[type="submit"]:hover {
   padding: 20px;
   text-align: center;
   /* Adds these to handle long words */
-  overflow-wrap: break-word;  /* Breaks the word if it's too long */
-  word-wrap: break-word;      /* Legacy support */
+  overflow-wrap: break-word; /* Breaks the word if it's too long */
+  word-wrap: break-word; /* Legacy support */
   hyphens: auto;
 }
 
 .flex-container {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
@@ -87,7 +87,7 @@ input[type="submit"]:hover {
   background-color: rgb(221, 230, 173);
   padding: 20px;
   text-align: center;
-  flex: 1 1 100%; 
+  flex: 1 1 100%;
   border-style: ridge;
 }
 
@@ -109,72 +109,107 @@ input[type="submit"]:hover {
 }
 
 /*WS03 pseudo-classes*/
-      .pseudo-list li {
-        padding: 10px;
-        color: white;
-      }
+.pseudo-list li {
+  padding: 10px;
+  color: white;
+}
 .pseudo-list li:nth-child(odd) {
-        background-color: rgb(225, 146, 117);
-      }
+  background-color: rgb(225, 146, 117);
+}
 
-      .pseudo-list li:nth-child(even) {
-        background-color: rgb(223, 199, 207);
-      }
+.pseudo-list li:nth-child(even) {
+  background-color: rgb(223, 199, 207);
+}
 
 /*WS05 responsive design*/
-      .responsive-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    
-    .column {
-      flex: 1;
-      padding: 20px;
-      border-style: ridge;
-      background-color: sandybrown;
-    }
-    
-    @media (max-width: 600px) {
-      .column {
-        flex: 100%;
-      }
-    }
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    .responsive-image {
-      max-width: 30%;
-      height: auto;
-    }
+.column {
+  flex: 1;
+  padding: 20px;
+  border-style: ridge;
+  background-color: sandybrown;
+}
 
-    .responsive-nav .nav-list {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      gap: 10px;
-    }
-    
-    @media (max-width: 600px) {
-      .responsive-nav .nav-list {
-        display: none;
-       
-      }
-    
-      .responsive-nav .menu-toggle {
-        display: block;
-        background-color: #958518;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-      }
-    }
-    /*WS06 Bootstrap overrides*/
-    .row {
-      background-color: rgb(181, 52, 121);
-      padding: 30px;
-      text-align: center;
-      border-style: double;
-      }
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
 
+.responsive-image {
+  max-width: 30%;
+  height: auto;
+}
 
-    
-     
+.responsive-nav .nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .responsive-nav .nav-list {
+    display: none;
+  }
+
+  .responsive-nav .menu-toggle {
+    display: block;
+    background-color: #958518;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+/*WS06 Bootstrap overrides*/
+.row {
+  background-color: rgb(181, 52, 121);
+  padding: 30px;
+  text-align: center;
+  border-style: double;
+}
+
+.btn-primary {
+  background-color: rgb(16, 76, 73);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(5, 5, 5);
+}
+
+.btn-secondary {
+  background-color: rgb(93, 175, 171);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(5, 5, 5);
+}
+
+.btn-success {
+  background-color: rgb(119, 156, 154);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(5, 5, 5);
+}
+
+.btn-primary:hover {
+  background-color: rgb(32, 42, 41);
+}
+
+.btn-secondary:hover {
+  background-color: rgb(37, 29, 29);
+}
+
+.btn-success:hover {
+  background-color: rgb(42, 36, 36);
+}
+
+.alert-success {
+  background-color: rgb(12, 203, 34);
+  color: black;
+  border: 2px ridge;
+  border-color: rgb(111, 83, 35);
+}
