@@ -19,3 +19,41 @@
     object-fit: cover;
     object-position: center; /* Pitää huolen, että kuvan keskikohta on näkyvissä */
 }
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Voit muuttaa tätä haluamasi kokoiseksi */
+    padding: 10px 15px; /* Lisää tilaa linkkien ympärille */
+}
+
+/*Historia sivun tyylit*/
+.history-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 10%;
+}
+
+.history-section img {
+    width: 50%;
+    border-radius: 12px;
+}
+
+.history-image,
+.history-text {
+    flex: 1;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .history-section {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+}
