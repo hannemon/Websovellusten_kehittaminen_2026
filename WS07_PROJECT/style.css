@@ -14,6 +14,9 @@ h1, h2, h3, h4 {
     font-family: "Segoe UI", "Arial Narrow", sans-serif;
     font-weight: 300; /* Tekee fontista ohuen ja elegantin */
     letter-spacing: 1px; /* Levittää kirjaimia hieman, näyttää upealta */
+    color: #333;
+    text-align: center; /* Keskittää otsikot */
+    margin-bottom: 20px; /* Lisää tilaa otsikon alle */
 }
 
 /*Cards*/
@@ -24,9 +27,10 @@ h1, h2, h3, h4 {
     object-position: center; /* Pitää huolen, että kuvan keskikohta on näkyvissä */
 }
 
+/* Navbar */
 .navbar-nav .nav-link {
-    font-size: 18px; /* Voit muuttaa tätä haluamasi kokoiseksi */
-    padding: 20px 15px; /* Lisää tilaa linkkien ympärille */
+    font-size: 15px; /* Voit muuttaa tätä haluamasi kokoiseksi */
+    padding: 10px 15px; /* Lisää tilaa linkkien ympärille */
 }
 
 /*Historia sivun tyylit*/
@@ -38,22 +42,26 @@ h1, h2, h3, h4 {
 }
 
 .history-section img {
-    width: 50%;
+    width: 80%;
     border-radius: 12px;
+    max-width: 450px; /* Tämä estää kuvaa leviämästä liian jättimäiseksi, jos ruutu on todella leveä */
+    display: block;
+    margin: 0 auto; /* Keskittää kuvan vaakasuunnassa */
 }
 
-.history-image,
-.history-text {
-    flex: 1;
-    padding: 1px;
+.history-image { 
+    flex: 1,5; /* Kuva saa enemmän tilaa (n. 60 %) */
+}
 
+.history-text {
+    flex: 1; /* Teksti tyytyy vähempään (n. 40 %) */
 }
 
 .reverse {
     flex-direction: row-reverse;
 }
 
-/* Responsiivisuus */
+/* Responsiivisuus historia -osioon*/
 @media (max-width: 768px) {
     .history-section {
         flex-direction: column;
@@ -62,4 +70,19 @@ h1, h2, h3, h4 {
     .reverse {
         flex-direction: column;
     }
+}
+
+/* Historia sivun karusellin tyylit */
+.carousel-item img {
+    height: 1000px; /* Voit muuttaa tätä haluamasi korkeudeksi */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Lähdeteksti historia sivulle */
+.lahdeteksti {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
 }
