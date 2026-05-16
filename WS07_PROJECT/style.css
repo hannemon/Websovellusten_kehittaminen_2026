@@ -1,12 +1,19 @@
 .body {
    background-color: #f8f6f2; 
-   font-family: sans-serif;
+   font-family: "Segoe UI", "Arial Narrow", sans-serif;
+   font-size: 1rem;
 }
 
 .header {
   font-size: 10px;
   text-align: center;
   margin: 20px 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Segoe UI", "Arial Narrow", sans-serif;
+    font-weight: 300; /* Tekee fontista ohuen ja elegantin */
+    letter-spacing: 1px; /* Levittää kirjaimia hieman, näyttää upealta */
 }
 
 /*Cards*/
@@ -38,6 +45,8 @@
 .history-image,
 .history-text {
     flex: 1;
+    padding: 1px;
+
 }
 
 .reverse {
