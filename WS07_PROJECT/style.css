@@ -1,7 +1,7 @@
 .body {
-   background-color: #f8f6f2; 
-   font-family: "Segoe UI", "Arial Narrow", sans-serif;
-   font-size: 1rem;
+  background-color: #f8f6f2;
+  font-family: "Segoe UI", "Arial Narrow", sans-serif;
+  font-size: 1rem;
 }
 
 .header {
@@ -11,103 +11,132 @@
 }
 
 h1 {
-    font-family: "Segoe UI", "Arial Narrow", sans-serif;
-    font-weight: 300; /* Tekee fontista ohuen ja elegantin */
-    letter-spacing: 1px; /* Levittää kirjaimia hieman, näyttää upealta */
-    color: #333;
-    text-align: center; /* Keskittää otsikot */
-    background-color: #e7e3d9; /* Vaalea taustaväri otsikoille */
-    padding: 20px; /* Lisää tilaa otsikoiden ympärille */
-} 
+  font-family: "Segoe UI", "Arial Narrow", sans-serif;
+  font-weight: 300; /* Tekee fontista ohuen ja elegantin */
+  letter-spacing: 1px; /* Levittää kirjaimia hieman */
+  color: #333;
+  text-align: center; /* Keskittää otsikot */
+  background-color: #e7e3d9; /* Vaalea taustaväri otsikoille */
+  padding: 20px; /* Lisää tilaa otsikoiden ympärille */
+}
 
-h2, h3, h4 {
-    font-family: "Segoe UI", "Arial Narrow", sans-serif;
-    font-weight: 300; /* Tekee fontista ohuen ja elegantin */
-    letter-spacing: 1px; /* Levittää kirjaimia hieman, näyttää upealta */
-    color: #333;
-    text-align: center; /* Keskittää otsikot */
-    background-color: #e7e3d9; /* Vaalea taustaväri otsikoille */
-    padding: 10px; /* Lisää tilaa otsikoiden ympärille */
-    border-radius: 8px; /* Pyöristää otsikoiden kulmat */
+h2,
+h3 {
+  font-family: "Segoe UI", "Arial Narrow", sans-serif;
+  font-weight: 300; /* Tekee fontista ohuen ja elegantin */
+  letter-spacing: 1px; /* Levittää kirjaimia hieman */
+  color: #333;
+  text-align: center; /* Keskittää otsikot */
+  background-color: #e7e3d9; /* Vaalea taustaväri otsikoille */
+  padding: 10px; /* Lisää tilaa otsikoiden ympärille */
+  border-radius: 8px; /* Pyöristää otsikoiden kulmat */
+}
 
+h4 {
+  font-family: "Segoe UI", "Arial Narrow", sans-serif;
+  font-weight: 300; /* Tekee fontista ohuen ja elegantin */
+  letter-spacing: 1px; /* Levittää kirjaimia hieman */
+  background-color: #b8b6b2; /* Vaalea taustaväri otsikoille */
+  border-radius: 8px; /* Pyöristää otsikoiden kulmat */
 }
 
 /*Cards*/
 .card-img-top {
-    width: 100%;
-    height: 300px; /* Voit muuttaa tätä sen mukaan, kuinka korkean haluat */
-    object-fit: cover;
-    object-position: center; /* Pitää huolen, että kuvan keskikohta on näkyvissä */
+  width: 100%;
+  height: 300px; /* Voit muuttaa tätä sen mukaan, kuinka korkean haluat */
+  object-fit: cover; /* Tämä pitää kuvat oikeassa mittasuhteessa, mutta leikkaa ne tarvittaessa */
+  object-position: center; /* Pitää huolen, että kuvan keskikohta on näkyvissä */
 }
 
 /* Navbar */
 .navbar-nav .nav-link {
-    font-size: 15px; /* Voit muuttaa tätä haluamasi kokoiseksi */
-    padding: 10px 15px; /* Lisää tilaa linkkien ympärille */
+  font-size: 15px; /* Voit muuttaa tätä haluamasi kokoiseksi */
+  padding: 10px 15px; /* Lisää tilaa linkkien ympärille */
 }
 
 /*Historia sivun tyylit*/
 .history-section {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 80px 10%;
+  display: flex; /* Käytetään Flexboxia elementtien asetteluun */
+  align-items: center;
+  gap: 50px; /* Tekee ison välin kuvan ja tekstin väliin */
+  padding: 50px 10%; /* Tekee tyhjää tilaa ylös/alas */ /*10% vasemmalle/oikealle */
 }
 
 .history-section img {
-    width: 80%;
-    border-radius: 12px;
-    max-width: 450px; /* Tämä estää kuvaa leviämästä liian jättimäiseksi, jos ruutu on todella leveä */
-    display: block;
-    margin: 0 auto; /* Keskittää kuvan vaakasuunnassa */
+  width: 80%;
+  border-radius: 12px; /* Pyöristää kuvan kulmat */
+  max-width: 450px; /* Tämä estää kuvaa leviämästä liian jättimäiseksi, jos ruutu on todella leveä */
+  display: block; /* Tämä varmistaa, että kuva käyttäytyy kuten lohkoelementti, mikä helpottaa keskittämistä */
+  margin: 0 auto; /* Keskittää kuvan vaakasuunnassa */
 }
 
-.history-image { 
-    flex: 1,5; /* Kuva saa enemmän tilaa (n. 60 %) */
+.history-image {
+  flex: 1, 5; /* Kuva saa enemmän tilaa (n. 60 %) */
 }
 
 .history-text {
-    flex: 1; /* Teksti tyytyy vähempään (n. 40 %) */
+  flex: 1; /* Teksti tyytyy vähempään (n. 40 %) */
 }
 
 .reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse; /* Tämä kääntää elementtien järjestyksen, jolloin kuva on oikealla ja teksti vasemmalla */
 }
 
-/* Responsiivisuus historia -osioon*/
-@media (max-width: 768px) {
-    .history-section {
-        flex-direction: column;
-    }
-
-    .reverse {
-        flex-direction: column;
-    }
-}
-
-/* Historia sivun karusellin tyylit */
+/* Historia -sivun karusellin tyylit */
 .carousel-item img {
-    height: 1000px; /* Voit muuttaa tätä haluamasi korkeudeksi */
-    object-fit: cover;
-    object-position: center;
+  height: 100%; /* Voit muuttaa tätä haluamasi korkeudeksi */
+  height: 1000px;
+  object-fit: cover; /* Tämä pitää kuvat oikeassa mittasuhteessa */
+  object-position: center;
 }
 
-/* Lähdeteksti historia sivulle */
+/* Työpöytä */
+@media (max-width: 769px) {
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+/* Mobiili */
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+/* Responsiivisuus historia -sivun "teksti/kuva" kohtaan*/
+@media (max-width: 768px) {
+  .history-section {
+    flex-direction: column; /* Asettaa elementit päällekkäin mobiilissa */
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+}
+
+/* Historia -sivun gallerian teksti */
+.history-text-block {
+    border-left: 4px solid #b8b6b2; /* Tämä luo paksun vasemman reunan */
+    padding-left: 20px; /* Tämä luo tilaa tekstin ja reunan väliin */
+}
+
+/* Lähdeteksti historia -sivulle */
 .lahdeteksti {
-    font-size: 0.8rem;
-    color: #666;
-    text-align: center;
-    margin-top: 20px;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Tyyli, mistä tunnistaa Tykin*/
+/* Tyylit; mistä tunnistaa Tykin*/
 .flex-container {
-  display: flex;
-  justify-content: space-around;
+  display: flex; /* Käytetään Flexboxia laatikoiden asetteluun */
+  justify-content: space-around; /* Jakaa tilan tasaisesti laatikoiden välillä */
   align-items: center;
   padding: 20px;
   gap: 10px;
-  flex-wrap: wrap; /* This allows items to move to the next line */
+  flex-wrap: wrap; /* Tämä varmistaa, että laatikot asettuvat uudelleen pienemmillä näytöillä */
 }
 
 .box {
@@ -115,7 +144,7 @@ h2, h3, h4 {
   padding: 20px;
   text-align: center;
   flex: 1 1 100%;
-  border-style: ridge;
+  border-style: ridge; /* Tämä luo "ridge" -tyylisen reunan laatikoille */
 }
 
 .responsive-box {
@@ -124,6 +153,24 @@ h2, h3, h4 {
 }
 
 .btn-primary {
-    background-color: rgb(127, 101, 107);
-    border-color: rgb(45, 20, 26);
+  background-color: rgb(127, 101, 107);
+  border-color: rgb(45, 20, 26);
+}
+
+/* Galleria */
+.gallery {
+  display: grid; /* Käytetään CSS Grid -asettelua gallerian luomiseen */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Tämä luo responsiivisen ruudukon, joka mukautuu näytön kokoon */
+  gap: 20px;
+  padding: 50px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Pyöristää kuvan kulmat */
+  object-fit: cover; /* Tämä pitää kuvat oikeassa mittasuhteessa */
 }

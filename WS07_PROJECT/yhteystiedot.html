@@ -53,6 +53,32 @@
     <header>
       <h1>Yhteystiedot</h1>
     </header>
+    <main>
+      <div class="container">
+        <section>
+          <h4>Ota yhteyttä</h4>
+          <p>
+            Jos siulla on kysyttävää Wanhan Tykin historiasta tai yhteisöstä,
+            voit ottaa yhteyttä seuraavasti:
+          </p>
+          <ul>
+            <li><strong>Sähköposti:</strong> info@tykinhistoria.fi</li>
+            <li><strong>puhelin:</strong> 040 123 4567</li>
+            <li><strong>Osoite:</strong> Tykkitie 1, 53100 Lappeenranta</li>
+          </ul>
+        </section>
+        <h4>Yhteydenotto lomakkeella</h4>
+        <form action="/submit_form" method="post">
+          <label for="name">Nimi:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Sähköposti:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="message">Viesti:</label><br />
+          <textarea id="message" name="message"></textarea><br /><br />
+          <input type="submit" value="Lähetä" />
+        </form>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer class="text-center bg-light py-4">
