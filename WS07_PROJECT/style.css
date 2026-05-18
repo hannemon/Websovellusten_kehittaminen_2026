@@ -117,11 +117,11 @@ h4 {
 
 /* Historia -sivun gallerian teksti */
 .history-text-block {
-    border-left: 4px solid #b8b6b2; /* Tämä luo paksun vasemman reunan */
-    padding-left: 20px; /* Tämä luo tilaa tekstin ja reunan väliin */
+  border-left: 4px solid #b8b6b2; /* Tämä luo paksun vasemman reunan */
+  padding-left: 20px; /* Tämä luo tilaa tekstin ja reunan väliin */
 }
 
-/* Lähdeteksti historia -sivulle */
+/* Lähdeteksti historia -sivulle sekä quoteen */
 .lahdeteksti {
   font-size: 0.8rem;
   color: #666;
@@ -174,3 +174,22 @@ h4 {
   border-radius: 12px; /* Pyöristää kuvan kulmat */
   object-fit: cover; /* Tämä pitää kuvat oikeassa mittasuhteessa */
 }
+
+/* Quote */
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: lightgray;
+}
+
+
+
